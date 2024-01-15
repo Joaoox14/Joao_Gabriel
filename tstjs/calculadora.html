@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css2/calculadora.css">
+    <title>Calculadora de Gorjeta</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Calculadora de Gorjeta</h1>
+        <div class="input-container">
+            <label for="billAmount">Valor da Conta:</label>
+            <input type="number" id="billAmount" placeholder="Insira o valor da conta">
+        </div>
+
+        <div class="input-container">
+            <label for="tipPercentage">Porcentagem de Gorjeta:</label>
+            <input type="number" id="tipPercentage" placeholder="Insira a porcentagem de gorjeta">
+        </div>
+
+        <button onclick="calculateTip()">Calcular Gorjeta</button>
+
+        <div id="result">
+            <p>Total da Conta: <span id="totalAmount"></span></p>
+            <p>Gorjeta: <span id="tipAmount"></span></p>
+        </div>
+    </div>
+
+    <script src="js2/caluladora.js"></script>
+</body>
+
+</html>
